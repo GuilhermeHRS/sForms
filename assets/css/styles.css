@@ -12,6 +12,17 @@
     font-family: Poppins;
 }
 
+/* .content {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    
+    #container-left { grid-area: 1 / 1 / 2 / 2; }
+    #container-card { grid-area: 1 / 2 / 2 / 3; } */
+
 #container-card {
 
     background: rgb(70,134,198);
@@ -23,16 +34,28 @@
     align-content: center;
     width: 100%;
     height: 100vh;
-    
 }
 
 .container-form{
     background: #fff;
-    width: 500px;
-    height: 50%;
     border-radius: 18px 18px 18px 18px; ;
     box-shadow: 0px 2px 23px #00000030;   
 }
+
+.login-form h1{
+    background-image: linear-gradient(to bottom, rgb(22, 13, 32), steelblue, rgb(64, 192, 224));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .login-form h1 {
+    font-size: 2.7rem;
+    line-height: 1.1;
+  }
 
 .login-form h1{
     font-family: 'Open Sans', sans-serif;
@@ -44,9 +67,11 @@
 }
 
 #forms{
-    margin: 20px 0 20px 0;
+    margin: 16px 0 16px 0;
     padding: 0px 25px;
 }
+
+/* ------------------------------------ Inputs -------- */
 .field-container{
     margin: 18px 0;
     width: 30px;
@@ -59,7 +84,10 @@
     border-radius: 10px;
     box-shadow: 0px 2px 23px #e7e7e7;
     font-size: 16px;
+    padding-left: 20px;
 }
+
+/* ------------------------------------ Submit button---- */
 
 .btn-submit {
     font-family: poppins-bold;
@@ -70,15 +98,41 @@
     border-radius: 10px;
     padding: 0;
     margin: 5px 0;
-    background-color: rgb(69, 113, 170);
+    background-color: rgb(35, 62, 97);
+    color: #fff;
 }
 
-span{
-    text-align: center;
-    align-self: center;
+.btn-submit:hover {
+    background-color: rgb(198, 212, 230);
+    color: #100;
+}
+
+/* ------------------------------------ Forget password ---- */
+
+.link-action{
+    margin: 10px 0;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
+.link-action a:link {
+    color: red;
+ }
+ 
+ .link-action a:visited {
+     color: rgb(70, 99, 70);
+ }
+ 
+ .link-action a:hover {
+     color: #000000;
+ }
+ 
+ .link-action a:active {
+     color: rgb(27, 27, 139);
+ }
+
+ /* ---------------------------------- Separation line ------ */
 #row{
     align-items: center;
     border-bottom: 1px solid #dadde1;
@@ -87,3 +141,90 @@ span{
     text-align: center;
 }
 
+/* ------------------------------------ Register button ----- */
+#register{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register button {
+    font-family: poppins-bold;
+    font-size: 18px;
+    width: 350px;
+    height: 42px;
+    border: 1px solid rgb(161, 157, 157);
+    border-radius: 8px;
+    margin: 5px 0;
+    background-color: rgb(35, 62, 97);
+    color: #fff;
+}
+
+
+#register button:hover {
+    background-color: rgb(198, 212, 230);
+    color: rgb(26, 3, 56);
+}
+
+/* .switch {
+    position: absolute;
+    width: 60px;
+    height: 34px;
+    margin-left: 250px;
+    margin-top: 50px;
+    float: right;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000000;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+   Rounded sliders 
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } */
